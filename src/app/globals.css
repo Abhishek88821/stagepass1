@@ -620,5 +620,8 @@ body {
         height: 24px;
         object-fit: contain;
     }
+    .pro-div-cnt ul>li {
+        line-height: 29px;
+    }
 
 }
