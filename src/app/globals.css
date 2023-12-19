@@ -624,4 +624,8 @@ body {
         line-height: 29px;
     }
 
+    body, html {
+overflow-x: hidden;
+    }
+    
 }
