@@ -35,7 +35,7 @@ function Page({ params }) {
     // }, [])
 
     
-return document.getElementsByClassName('ytp-title-text')[0].style.display="none";
+// return document.getElementsByClassName('ytp-title-text')[0].style.display="none";
     
 
     return (
