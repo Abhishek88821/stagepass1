@@ -1,11 +1,11 @@
 'use client';
 
-// import React from 'react';
+import React from 'react';
 import axios from 'axios';
 import Link from 'next/link';
 import Image from 'next/image';
 import Carousel from 'react-bootstrap/Carousel';
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 import Experience from '../img/experience.png';
 import Follower from '../img/followers.png';
 import Show from '../img/show.png';
@@ -23,19 +23,19 @@ import { FaArrowRight } from "react-icons/fa";
 function Page({ params }) {
 
     const { ID } = params;
-    const [comedians, setComedians] = useState([]);
+    // const [comedians, setComedians] = useState([]);
 
-    // const comedians = {"artist_id":2,"artist_name":"Kaustubh Agarwal","description":"Integer arcu commodo purus mauris volutpat. Mi amet pharetra id malesuada pulvinar ac. Ipsum augue et diam est vitae dignissim. Augue mauris semper fusce at. Venenatis tempus sit volutpat sit vivahs. Integer arcu commodo purus mauris volutpat. Mi amet pharetra id malesuada pulvinar ac. Ipsum augue et diam est vitae dignissim. Augue mauris semper fusce at. Venenatis tempus sit volutpat sit vivahs.","artist_image":"https://stagepass-static-host.s3.ap-south-1.amazonaws.com/Event+Banner.jpeg","medias":{"videos":["https://www.youtube.com/watch?v=LKdUF7nO_zU"],"images":["https://stagepass-static-host.s3.ap-south-1.amazonaws.com/Event+Banner.jpeg"]},"years_of_experience":"4+","number_of_shows":"550+","youtube_views":"10M+","number_of_followers":"220K+","instagram_link":"https://www.instagram.com/hilarious_big/","youtube_link":"https://www.youtube.com/@ComicKaustubhAgarwal/featured","metadata_link":["https://www.primevideo.com/detail/0KJWUBZI40J231BM4RWYV402V9/ref=atv_dp_share_cu_r","https://www.primevideo.com/detail/0KJWUBZI40J231BM4RWYV402V9/ref=atv_dp_share_cu_r"],"previous_work":[{"label":"Stand-Up Videos","link":"https://www.youtube.com/@ComicKaustubhAgarwal/videos"},{"label":"Bidi News","link":"https://www.youtube.com/shorts/rMeQDFrdtkg"}]}
+    const comedians = {"artist_id":2,"artist_name":"Kaustubh Agarwal","description":"Integer arcu commodo purus mauris volutpat. Mi amet pharetra id malesuada pulvinar ac. Ipsum augue et diam est vitae dignissim. Augue mauris semper fusce at. Venenatis tempus sit volutpat sit vivahs. Integer arcu commodo purus mauris volutpat. Mi amet pharetra id malesuada pulvinar ac. Ipsum augue et diam est vitae dignissim. Augue mauris semper fusce at. Venenatis tempus sit volutpat sit vivahs.","artist_image":"https://stagepass-static-host.s3.ap-south-1.amazonaws.com/Event+Banner.jpeg","medias":{"videos":["https://www.youtube.com/watch?v=LKdUF7nO_zU"],"images":["https://stagepass-static-host.s3.ap-south-1.amazonaws.com/Event+Banner.jpeg"]},"years_of_experience":"4+","number_of_shows":"550+","youtube_views":"10M+","number_of_followers":"220K+","instagram_link":"https://www.instagram.com/hilarious_big/","youtube_link":"https://www.youtube.com/@ComicKaustubhAgarwal/featured","metadata_link":["https://www.primevideo.com/detail/0KJWUBZI40J231BM4RWYV402V9/ref=atv_dp_share_cu_r","https://www.primevideo.com/detail/0KJWUBZI40J231BM4RWYV402V9/ref=atv_dp_share_cu_r"],"previous_work":[{"label":"Stand-Up Videos","link":"https://www.youtube.com/@ComicKaustubhAgarwal/videos"},{"label":"Bidi News","link":"https://www.youtube.com/shorts/rMeQDFrdtkg"}]}
 
-    useEffect(() => {
-        fetch('https://dev-8hm08e04mtdz10e.api.raw-labs.com/stagepass-prive?artist_id=' + ID)
-            .then(response => response.json())
-            .then(data => setComedians(data))
-            .catch(err => console.log(err))
-    }, [])
+    // useEffect(() => {
+    //     fetch('https://dev-8hm08e04mtdz10e.api.raw-labs.com/stagepass-prive?artist_id=' + ID)
+    //         .then(response => response.json())
+    //         .then(data => setComedians(data))
+    //         .catch(err => console.log(err))
+    // }, [])
 
     
-    // setTimeout( function() { document.getElementsByClassName('ytp-title-text')[0].style.display="none"} , 1000);
+    setTimeout( function() { document.getElementsByClassName('ytp-title-text')[0].style.display="none"} , 1000);
     
 
     return (
