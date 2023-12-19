@@ -35,7 +35,7 @@ function Page({ params }) {
     // }, [])
 
     
-    setTimeout( function() { document.getElementsByClassName('ytp-title-text')[0].style.display="none"} , 1000);
+return document.getElementsByClassName('ytp-title-text')[0].style.display="none";
     
 
     return (
