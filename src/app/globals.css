@@ -615,5 +615,10 @@ body {
         font-size: 26px;
         height: 50px;
     }
+    .vid-div a.carousel-control-next .carousel-control-next-icon, .vid-div a.carousel-control-prev .carousel-control-prev-icon {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
 
 }
