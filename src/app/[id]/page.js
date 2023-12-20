@@ -38,7 +38,7 @@ function Page({ params }) {
 // return document.getElementsByClassName('ytp-title-text')[0].style.display="none";
     
 
-    return (
+  return (
         <>
             {/* <!-- video slider start --> */}
             <section className="vid-div position-relative">
@@ -73,7 +73,7 @@ function Page({ params }) {
             </section >
             {/* <!-- button end -->
     <!-- character details start --> */}
-            < section className="chr-dtl-div position-relative pb-md-5 pb-3" >
+            < section className="chr-dtl-div position-relative pb-lg-5 pb-md-4 pb-3" >
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-12">
@@ -103,8 +103,8 @@ function Page({ params }) {
                                     </ul>
                                 </div>
                                 <div className="pro-div-par d-flex flex-wrap">
-                                    <p>{comedians.description}<Link href="javascript:void(0)" role="button"
-                                        className="text-decoration-none ps-2 text-white fw-bolder">Read more</Link></p>
+                                    <p className="mb-0" >{comedians.description}</p><Link href="javascript:void(0)" role="button"
+                                        className="text-decoration-none pt-1 text-white fw-bolder">Read more</Link>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +157,7 @@ function Page({ params }) {
             </section >
             {/* <!-- character details end -->
     <!-- previous work start --> */}
-            < section className="pre-wrk-div py-md-5 py-4" >
+            < section className="pre-wrk-div py-lg-5 py-md-4 py-4" >
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-12">
@@ -167,7 +167,7 @@ function Page({ params }) {
                             <div className="prv-wrk-lst">
                                 <ul className="list-unstyled mb-0 d-flex flex-wrap justify-content-center">
                                     {comedians.previous_work.map((list, index) => (
-                                        <li key={index} ><a href={list.link} className="text-decoration-none" ><span>{list.label}</span></a></li>
+                                        <li key={index} ><a href={list.link} target="_blank" className="text-decoration-none" ><span>{list.label}</span></a></li>
                                     ))}
                                 </ul>
                             </div>
