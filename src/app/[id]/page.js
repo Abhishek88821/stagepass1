@@ -20,25 +20,30 @@ import { FaArrowRight } from "react-icons/fa";
 
 
 
-function Page({ params }) {
+function page({ params }) {
 
-    const { ID } = params;
+    const { id } = params;
     // const [comedians, setComedians] = useState([]);
 
-    const comedians = {"artist_id":2,"artist_name":"Kaustubh Agarwal","description":"Integer arcu commodo purus mauris volutpat. Mi amet pharetra id malesuada pulvinar ac. Ipsum augue et diam est vitae dignissim. Augue mauris semper fusce at. Venenatis tempus sit volutpat sit vivahs. Integer arcu commodo purus mauris volutpat. Mi amet pharetra id malesuada pulvinar ac. Ipsum augue et diam est vitae dignissim. Augue mauris semper fusce at. Venenatis tempus sit volutpat sit vivahs.","artist_image":"https://stagepass-static-host.s3.ap-south-1.amazonaws.com/Event+Banner.jpeg","medias":{"videos":["https://www.youtube.com/watch?v=LKdUF7nO_zU"],"images":["https://stagepass-static-host.s3.ap-south-1.amazonaws.com/Event+Banner.jpeg"]},"years_of_experience":"4+","number_of_shows":"550+","youtube_views":"10M+","number_of_followers":"220K+","instagram_link":"https://www.instagram.com/hilarious_big/","youtube_link":"https://www.youtube.com/@ComicKaustubhAgarwal/featured","metadata_link":["https://www.primevideo.com/detail/0KJWUBZI40J231BM4RWYV402V9/ref=atv_dp_share_cu_r","https://www.primevideo.com/detail/0KJWUBZI40J231BM4RWYV402V9/ref=atv_dp_share_cu_r"],"previous_work":[{"label":"Stand-Up Videos","link":"https://www.youtube.com/@ComicKaustubhAgarwal/videos"},{"label":"Bidi News","link":"https://www.youtube.com/shorts/rMeQDFrdtkg"}]}
+    const comedians = { "artist_id": 2, "artist_name": "Kaustubh Agarwal", "description": "Integer arcu commodo purus mauris volutpat. Mi amet pharetra id malesuada pulvinar ac. Ipsum augue et diam est vitae dignissim. Augue mauris semper fusce at. Venenatis tempus sit volutpat sit vivahs. Integer arcu commodo purus mauris volutpat. Mi amet pharetra id malesuada pulvinar ac. Ipsum augue et diam est vitae dignissim. Augue mauris semper fusce at. Venenatis tempus sit volutpat sit vivahs.", "artist_image": "https://stagepass-static-host.s3.ap-south-1.amazonaws.com/Event+Banner.jpeg", "medias": { "videos": ["https://www.youtube.com/watch?v=LKdUF7nO_zU"], "images": ["https://stagepass-static-host.s3.ap-south-1.amazonaws.com/Event+Banner.jpeg"] }, "years_of_experience": "4+", "number_of_shows": "550+", "youtube_views": "10M+", "number_of_followers": "220K+", "instagram_link": "https://www.instagram.com/hilarious_big/", "youtube_link": "https://www.youtube.com/@ComicKaustubhAgarwal/featured", "metadata_link": ["https://www.primevideo.com/detail/0KJWUBZI40J231BM4RWYV402V9/ref=atv_dp_share_cu_r", "https://www.primevideo.com/detail/0KJWUBZI40J231BM4RWYV402V9/ref=atv_dp_share_cu_r"], "previous_work": [{ "label": "Stand-Up Videos", "link": "https://www.youtube.com/@ComicKaustubhAgarwal/videos" }, { "label": "Bidi News", "link": "https://www.youtube.com/shorts/rMeQDFrdtkg" }] }
 
     // useEffect(() => {
-    //     fetch('https://dev-8hm08e04mtdz10e.api.raw-labs.com/stagepass-prive?artist_id=' + ID)
-    //         .then(response => response.json())
-    //         .then(data => setComedians(data))
-    //         .catch(err => console.log(err))
+    // fetch('https://dev-8hm08e04mtdz10e.api.raw-labs.com/stagepass-prive?artist_id=' + id)
+    //     .then(response => response.json())
+    //     .then(data => setComedians(data))
+    //     .catch(err => console.log(err))
     // }, [])
 
-    
-// return document.getElementsByClassName('ytp-title-text')[0].style.display="none";
-    
+    const handleMore = () => {
+        document.querySelectorAll(".pro-div-par p")[0].classList.toggle("active");
+        if (document.querySelectorAll('.pro-div-par a')[0].innerText == 'Read more') {
+            document.querySelectorAll(".pro-div-par a")[0].innerText = 'Read less';
+        } else {
+            document.querySelectorAll('.pro-div-par a')[0].innerText = 'Read more';
+        }
+    }
 
-  return (
+    return (
         <>
             {/* <!-- video slider start --> */}
             <section className="vid-div position-relative">
@@ -103,7 +108,7 @@ function Page({ params }) {
                                     </ul>
                                 </div>
                                 <div className="pro-div-par d-flex flex-wrap">
-                                    <p className="mb-0" >{comedians.description}</p><Link href="javascript:void(0)" role="button"
+                                    <p className="mb-0" >{comedians.description}</p><Link onClick={() => handleMore()} href="javascript:void(0)" role="button"
                                         className="text-decoration-none pt-1 text-white fw-bolder">Read more</Link>
                                 </div>
                             </div>
@@ -181,4 +186,4 @@ function Page({ params }) {
     )
 }
 
-export default Page
+export default page
