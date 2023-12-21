@@ -19,7 +19,7 @@ import { LuWallet2 } from "react-icons/lu";
 import { LuMusic } from "react-icons/lu";
 import { LuMessageSquare } from "react-icons/lu";
 
-function page() {
+function Page() {
 
 return (
     <>
@@ -133,4 +133,4 @@ return (
 )
 }
 
-export default page
+export default Page
