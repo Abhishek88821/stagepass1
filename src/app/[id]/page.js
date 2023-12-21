@@ -36,7 +36,7 @@ function Page({ params }) {
     // }, [])
 
     const mystyle = {
-      display: "none"
+      display: "none!important"
     };
 
     const handleMore = () => {
