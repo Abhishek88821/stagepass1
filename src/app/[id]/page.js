@@ -36,7 +36,7 @@ function Page({ params }) {
     // }, [])
 
     const mystyle = {
-      display: "block"
+      display: "none"
     };
 
     const handleMore = () => {
