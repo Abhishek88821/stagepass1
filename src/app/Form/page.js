@@ -28,11 +28,11 @@ return (
                 <div className="row" >
                     <div className="col-xl-12 col-lg-12 col-md-12 col-12" >
                         <div className="title pb-xl-5 pb-md-5 pb-4">
-                            <h2>It's boring, I know</h2>
+                            <h2>Its boring, I know</h2>
                         </div>
                         {/* form start */}
                         <div className="form-box" >
-                            <form className="form-div-box row p-0" method="" >
+                            <form className="form-div-box row p-0" >
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
                                     <div className="frm-div-lbl" >
                                         <label>Full Name<span>*</span></label>
