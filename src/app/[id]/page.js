@@ -73,7 +73,7 @@ function Page({ params }) {
                     <div className="row">
                         <div className="col-lg-12 col-md-12 col-12 position-relative">
                             <div className="btn-lnk ">
-                                <Link href="javascript:void(0)" role="button" className="text-decoration-none">
+                                <Link href="/Form" role="button" className="text-decoration-none">
                                     BOOK NOW
                                 </Link>
                             </div>
