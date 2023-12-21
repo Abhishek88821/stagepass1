@@ -1,7 +1,7 @@
 'use client';
 
-// import React from 'react';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+// import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -20,7 +20,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 
 
-function page({ params }) {
+function Page({ params }) {
 
     const { id } = params;
     // const [comedians, setComedians] = useState([]);
@@ -187,4 +187,4 @@ function page({ params }) {
     )
 }
 
-export default page
+export default Page
