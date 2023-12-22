@@ -1013,6 +1013,7 @@ iframe .ytp-pause-overlay-container,
     .frm-icn {
         font-size: 24px;
         margin-right: 10px;
+        opacity: .2;
     }
     .frm-div-lbl label {
         margin-left: 30px;
