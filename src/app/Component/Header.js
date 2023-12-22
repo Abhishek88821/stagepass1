@@ -34,7 +34,7 @@ const mystyle={
                         </div>
                         <div className="col-lg-2 col-md-1 col-sm-1 col-1">
                             <div className="men-icn position-relative text-md-end">
-                                <Link href="javascript:void(0)" className="text-decoration-none" role="button">
+                                <Link href="/Encyclopedia" className="text-decoration-none" role="button">
                                     <FaEquals />
                                 </Link>
                             </div>
