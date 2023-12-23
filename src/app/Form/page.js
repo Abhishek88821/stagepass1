@@ -134,8 +134,8 @@ function Page() {
                                             <label>Type of Event<span>*</span></label>
                                             <div className="frm-div-inp d-flex position-relative" >
                                                 <LuCalendarCheck className="frm-icn" />
-                                                <select className="form-control" name="event" >
-                                                    <option value="Birthday_Party" >
+                                                <select className="form-control" name="event"  onChange={handleChange} >
+                                                    <option value={formData.event} >
                                                         Birthday Party
                                                     </option>
                                                 </select>
@@ -148,15 +148,15 @@ function Page() {
                                             <label>Budget<span>*</span></label>
                                             <div className="frm-div-inp d-flex position-relative" >
                                                 <LuWallet2 className="frm-icn" />
-                                                <select className="form-control" name="budget"  >
+                                                <select className="form-control" name="budget"  onChange={handleChange}  >
                                                     <option value="" >
                                                         Choose budget range
                                                     </option>
-                                                    <option value="10-50k" >
+                                                    <option value={formData.budget} >
                                                         10K-50k
                                                     </option>
                                                     
-                                                    <option value="100-300k" >
+                                                    <option  value={formData.budget} >
                                                         100k-300k
                                                     </option>
                                                 </select>
