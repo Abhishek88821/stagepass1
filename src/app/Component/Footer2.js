@@ -52,7 +52,7 @@ function Footer() {
                     </div>
                     <div className="row" >
                         <div className="copyright py-md-2 py-2 text-center" >
-                            <span>Copyright &copy;2023 All rights reserved</span>
+                            <span className="text-dark" >Copyright &copy;2023 All rights reserved</span>
                         </div>
                     </div>
                 </div>
