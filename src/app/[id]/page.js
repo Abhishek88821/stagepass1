@@ -6,7 +6,6 @@ import axios from 'axios';
 import Link from 'next/link';
 import Image from 'next/image';
 import Carousel from 'react-bootstrap/Carousel';
-import React, { useEffect, useState } from 'react';
 import Experience from '../img/experience.png';
 import Follower from '../img/followers.png';
 import Show from '../img/show.png';
