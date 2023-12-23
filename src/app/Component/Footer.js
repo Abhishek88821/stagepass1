@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../Logo.png'
+import Logo from '../Logo.png'
 import React from 'react'
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -10,17 +10,15 @@ import '../stagepass.js';
 
 
 function Footer() {
-
     return (
         <>
-    {/* // < !--footer start-- > */}
             <footer className="foo-div position-relative pt-md-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                             <div className="foo-log-div">
                                 <Link  href="#" className="text-decoration-none" role="button">
-                                    <Image src={logo} className="img-fluid w-100" alt="Footer Logo" />
+                                    <Image src={Logo} className="img-fluid w-100" alt="Footer Logo" />
                                 </Link>
                             </div>
                         </div>
@@ -58,7 +56,6 @@ function Footer() {
                     </div>
                 </div>
             </footer>
-    {/* // <!--footer end-- > */}
         </>
     )
 }
