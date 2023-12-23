@@ -25,7 +25,7 @@ function Page() {
 
     const [numericValue, setNumericValue] = useState("");
     const [formData, setFormData] = useState({
-        username: "", phone: "", email: "", city: "", artist: "", message: ""
+        username: "", phone: "", email: "", city: "", artist: ""
     });
     const [errors, setErrors] = useState({});
 
@@ -50,9 +50,8 @@ function Page() {
         formData.email.trim() == "" ? newErrors.email = "err_msg" : newErrors.email = "suc_msg";
         formData.city.trim() == "" ? newErrors.city = "err_msg" : newErrors.city = "suc_msg";
         formData.artist.trim() == "" ? newErrors.artist = "err_msg" : newErrors.artist = "suc_msg";
-        formData.message.trim() == "" ? newErrors.message = "err_msg" : newErrors.message = "suc_msg";
 
-        if (newErrors.username == "suc_msg" && newErrors.phone == "suc_msg" && newErrors.email == "suc_msg" && newErrors.city == "suc_msg" && newErrors.artist == "suc_msg" && newErrors.message == "suc_msg") {
+        if (newErrors.username == "suc_msg" && newErrors.phone == "suc_msg" && newErrors.email == "suc_msg" && newErrors.city == "suc_msg" && newErrors.artist == "suc_msg") {
             window.location.href="/Success";
         } else {
             setErrors(newErrors);
@@ -175,11 +174,11 @@ function Page() {
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-sm-6 col-12" >
                                         <div className="frm-div-lbl" >
-                                            <label>Comments<span>*</span></label>
+                                            <label>Comments<span></span></label>
                                             <div className="frm-div-inp d-flex position-relative" >
                                                 <LuMessageSquare className="frm-icn" />
                                                 <input type="text" className="form-control" placeholder="Any message for us..." name="message" value={formData.message} onChange={handleChange} />
-                                                {errors.message == "err_msg" ? (<BiSolidErrorCircle className="suc-sgn err-sgn" />) : errors.username == "suc_msg" ? (<LuCheck className="suc-sgn suc-msg" />) : (<LuCheck className="suc-sgn" />)}
+                                                // {errors.message == "err_msg" ? (<BiSolidErrorCircle className="suc-sgn err-sgn" />) : errors.username == "suc_msg" ? (<LuCheck className="suc-sgn suc-msg" />) : (<LuCheck className="suc-sgn" />)}
                                             </div>
                                         </div>
                                     </div>
