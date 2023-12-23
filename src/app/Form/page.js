@@ -25,7 +25,7 @@ function Page() {
 
     const [numericValue, setNumericValue] = useState("");
     const [formData, setFormData] = useState({
-        username: "", phone: "", email: "", city: "", artist: ""
+        username: "", phone: "", email: "", city: "", event: "", budget: "", artist: ""
     });
     const [errors, setErrors] = useState({});
 
@@ -49,9 +49,11 @@ function Page() {
         numericValue.trim() == "" ? newErrors.phone = "err_msg" : newErrors.phone = "suc_msg";
         formData.email.trim() == "" ? newErrors.email = "err_msg" : newErrors.email = "suc_msg";
         formData.city.trim() == "" ? newErrors.city = "err_msg" : newErrors.city = "suc_msg";
+        formData.event.trim() == "" ? newErrors.event = "err_msg" : newErrors.city = "suc_msg";
+        formData.budget.trim() == "" ? newErrors.budget = "err_msg" : newErrors.budget = "suc_msg";
         formData.artist.trim() == "" ? newErrors.artist = "err_msg" : newErrors.artist = "suc_msg";
 
-        if (newErrors.username == "suc_msg" && newErrors.phone == "suc_msg" && newErrors.email == "suc_msg" && newErrors.city == "suc_msg" && newErrors.artist == "suc_msg") {
+        if (newErrors.username == "suc_msg" && newErrors.phone == "suc_msg" && newErrors.email == "suc_msg" && newErrors.city == "suc_msg" && newErrors.event == "suc_msg" && newErrors.budget == "suc_msg" && newErrors.artist == "suc_msg") {
             window.location.href="/Success";
         } else {
             setErrors(newErrors);
@@ -132,12 +134,12 @@ function Page() {
                                             <label>Type of Event<span>*</span></label>
                                             <div className="frm-div-inp d-flex position-relative" >
                                                 <LuCalendarCheck className="frm-icn" />
-                                                <select className="form-control" >
+                                                <select className="form-control" name="event" >
                                                     <option value="Birthday_Party" >
                                                         Birthday Party
                                                     </option>
                                                 </select>
-                                                <LuChevronDown className="suc-sgn drk" />
+           {errors.event == "err_msg" ? (<BiSolidErrorCircle className="suc-sgn err-sgn" />) : errors.event == "suc_msg" ? (<LuCheck className="suc-sgn suc-msg" />) : (<LuCheck className="suc-sgn" />)}
                                             </div>
                                         </div>
                                     </div>
@@ -146,19 +148,19 @@ function Page() {
                                             <label>Budget<span>*</span></label>
                                             <div className="frm-div-inp d-flex position-relative" >
                                                 <LuWallet2 className="frm-icn" />
-                                                <select className="form-control"  >
-                                                    <option value="1" >
+                                                <select className="form-control" name="budget"  >
+                                                    <option value="" >
                                                         Choose budget range
                                                     </option>
                                                     <option value="10-50k" >
                                                         10K-50k
                                                     </option>
                                                     
-                                                    <option value="10-50k" >
+                                                    <option value="100-300k" >
                                                         100k-300k
                                                     </option>
                                                 </select>
-                                                <LuChevronDown className="suc-sgn drk" />
+           {errors.budget == "err_msg" ? (<BiSolidErrorCircle className="suc-sgn err-sgn" />) : errors.budget == "suc_msg" ? (<LuCheck className="suc-sgn suc-msg" />) : (<LuCheck className="suc-sgn" />)}
                                             </div>
                                         </div>
                                     </div>
