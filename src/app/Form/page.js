@@ -112,7 +112,7 @@ function Page() {
                                             <label>Email Address<span>*</span></label>
                                             <div className="frm-div-inp d-flex position-relative" >
                                                 <LuMail className="frm-icn" />
-                                                <input type="text" className="form-control" placeholder="example@email.com" name="email" required="" value={formData.email} onChange={handleChange} />
+                                                <input type="email" className="form-control" placeholder="example@email.com" name="email" required="" value={formData.email} onChange={handleChange} />
                                                 {errors.email == "err_msg" ? (<BiSolidErrorCircle className="suc-sgn err-sgn" />) : errors.username == "suc_msg" ? (<LuCheck className="suc-sgn suc-msg" />) : (<LuCheck className="suc-sgn" />)}
                                             </div>
                                         </div>
