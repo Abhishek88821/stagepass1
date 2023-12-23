@@ -3,11 +3,12 @@
 import React from 'react';
 // import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Header from '../Component/Header';
+import Footer from '../Component/Footer';
 import Link from 'next/link';
 import Image from 'next/image';
 import Carousel from 'react-bootstrap/Carousel';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 
 
 
@@ -26,6 +27,7 @@ function page() {
     // }, [])
     return (
         <>
+        <Header />
             <section className="ecy-div" >
                 <div className="container" >
                     <div className="row" >
@@ -163,6 +165,7 @@ function page() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     )
 }

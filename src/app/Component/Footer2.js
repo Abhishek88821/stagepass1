@@ -1,12 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../Logo.png'
+import logo from '../img/LogoWhite.png'
 import React from 'react'
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import '../stagepass.js';
 
 
 function Footer() {
@@ -14,7 +13,7 @@ function Footer() {
     return (
         <>
     {/* // < !--footer start-- > */}
-            <footer className="foo-div position-relative pt-md-5">
+            <footer className="foo-div bg-white position-relative pt-md-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-sm-6 col-12">
@@ -29,22 +28,22 @@ function Footer() {
                                 <ul className="list-unstyled d-flex mb-0">
                                     <li>
                                         <Link  href="#" className="text-decoration-none" role="button">
-                                           <FaFacebookF />
+                                           <FaFacebookF className="text-white" />
                                         </Link>
                                     </li>
                                     <li>
                                         <Link  href="#" className="text-decoration-none" role="button">
-                                        <FaLinkedinIn />
+                                        <FaLinkedinIn  className="text-white" />
                                         </Link>
                                     </li>
                                     <li>
                                         <Link  href="#" className="text-decoration-none" role="button">
-                                        <FaInstagram />
+                                        <FaInstagram  className="text-white" />
                                         </Link>
                                     </li>
                                     <li>
                                         <Link  href="#" className="text-decoration-none" role="button">
-                                        <FaTwitter />
+                                        <FaTwitter  className="text-white" />
                                         </Link>
                                     </li>
                                 </ul>

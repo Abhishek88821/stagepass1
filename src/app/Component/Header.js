@@ -6,9 +6,7 @@ import { FaEquals } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
 
 function Header() {
-const mystyle={
-    display: "none"
-}
+
     return (
         <>
             {/* <!-- header start --> */}
@@ -23,7 +21,7 @@ const mystyle={
                             </div>
                         </div>
                         <div className="col-lg-7 col-md-8 col-sm-7 col-5" >
-                            <div className={"sea-div position-relative"} style={mystyle}  >
+                            <div className={"sea-div position-relative d-none"}   >
                                 <form className="sea-frm-div" action="" method="" >
                                     <div className="sea-frm-box" >
                                         <BsSearch />
