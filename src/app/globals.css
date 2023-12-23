@@ -23,7 +23,7 @@ body {
 .hea-div {
     position: absolute;
     width: 100%;
-    z-index: 1;
+    z-index: 99;
     top: 35px
 }
 
@@ -181,10 +181,6 @@ iframe .ytp-pause-overlay-container {
     z-index: 0;
     height: 120px;
     background: linear-gradient(0deg, var(--secondary) 30%, transparent)
-}
-
-.btn-div .btn-lnk {
-    z-index: 0;
 }
 
 .btn-div:before,
