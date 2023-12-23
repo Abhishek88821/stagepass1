@@ -183,6 +183,10 @@ iframe .ytp-pause-overlay-container {
     background: linear-gradient(0deg, var(--secondary) 30%, transparent)
 }
 
+.btn-div .btn-lnk {
+    z-index: 0;
+}
+
 .btn-div:before,
 .btn-lnk {
     position: absolute;
