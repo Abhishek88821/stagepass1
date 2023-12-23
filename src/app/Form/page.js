@@ -178,8 +178,7 @@ function Page() {
                                             <div className="frm-div-inp d-flex position-relative" >
                                                 <LuMessageSquare className="frm-icn" />
                                                 <input type="text" className="form-control" placeholder="Any message for us..." name="message" value={formData.message} onChange={handleChange} />
-                                                // {errors.message == "err_msg" ? (<BiSolidErrorCircle className="suc-sgn err-sgn" />) : errors.username == "suc_msg" ? (<LuCheck className="suc-sgn suc-msg" />) : (<LuCheck className="suc-sgn" />)}
-                                            </div>
+                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-12" >
