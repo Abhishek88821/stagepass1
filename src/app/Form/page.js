@@ -83,7 +83,7 @@ function Page() {
                     <div className="row" >
                         <div className="col-xl-12 col-lg-12 col-md-12 col-12" >
                             <div className="title pb-xl-5 pb-md-5 pb-4">
-                                <h2>It"s boring, I know...</h2>
+                                <h2>It's boring, I know...</h2>
                             </div>
                             {/* form start */}
                             <div className="form-box" >
