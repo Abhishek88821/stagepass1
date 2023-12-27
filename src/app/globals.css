@@ -23,7 +23,7 @@ body {
 .hea-div {
     position: absolute;
     width: 100%;
-    z-index: 99;
+    z-index: 1;
     top: 35px
 }
 
@@ -394,7 +394,7 @@ iframe .ytp-pause-overlay-container {
     background: var(--primary);
     border-radius: 100%;
     text-align: center;
-    line-height: 28px
+    line-height: 25px
 }
 
 .foo-soc-lst>ul>li svg {
@@ -590,10 +590,6 @@ input.btn.btn-sbt,
     font-family: var(--fontH);
 }
 
-.success-img {
-    width: 210px;
-}
-
 .suc-div h3 {
     font-weight: 600;
     font-size: 22px;
@@ -611,6 +607,101 @@ input.btn.btn-sbt,
     margin-bottom: 35px;
     font-family: var(--fontH);
 }
+
+
+/* svg start */
+
+.animation-ctn{
+    margin: 35px 0;
+  }
+
+  .animation-ctn svg {
+    position: relative;
+  }
+  
+      @-webkit-keyframes checkmark {
+      0% {
+          stroke-dashoffset: 100px
+      }
+  
+      100% {
+          stroke-dashoffset: 200px
+      }
+  }
+  
+  @-ms-keyframes checkmark {
+      0% {
+          stroke-dashoffset: 100px
+      }
+  
+      100% {
+          stroke-dashoffset: 200px
+      }
+  }
+  
+  @keyframes checkmark {
+      0% {
+          stroke-dashoffset: 100px
+      }
+  
+      100% {
+          stroke-dashoffset: 0px
+      }
+  }
+  
+
+
+  @-webkit-keyframes checkmark-circle {
+      0% {
+          stroke-dashoffset: 480px
+     
+      }
+  
+      100% {
+          stroke-dashoffset: 960px;
+        
+      }
+  }
+  
+  @-ms-keyframes checkmark-circle {
+      0% {
+          stroke-dashoffset: 240px
+      }
+  
+      100% {
+          stroke-dashoffset: 480px
+      }
+  }
+  
+  @keyframes checkmark-circle {
+      0% {
+          stroke-dashoffset: 480px 
+      }
+  
+      100% {
+          stroke-dashoffset: 960px
+      }
+  }
+
+  .icon--order-success svg polyline,   .icon--order-success svg circle {
+    transition: .5s all ease-in;
+  }
+  
+  .icon--order-success svg polyline {
+      -webkit-animation: checkmark 3s ease-in-out infinite forwards;
+      animation: checkmark 3s ease-in-out infinite   forwards;
+  }
+  
+  .icon--order-success svg circle {
+      -webkit-animation: checkmark-circle 3s ease-in-out infinite forwards;
+      animation: checkmark-circle 3s ease-in-out infinite forwards;
+  }
+  /* .icon--order-success svg circle#colored {
+      -webkit-animation: colored-circle 4s ease-in-out 6s infinite backwards;
+      animation: colored-circle 4s ease-in-out 6s infinite backwards;
+  }  */
+/* svg end */
+
 
 /* success page end */
 
@@ -943,7 +1034,6 @@ input.btn.btn-sbt,
 
     .nav-div ul {
         line-height: 50px;
-        margin-top: -100px;
     }
 
     
