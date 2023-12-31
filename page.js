@@ -10,11 +10,8 @@ import Footer from '../app/Component/Footer';
 import Slider1 from '../app/img/slider.webp';
 import About from '../app/img/About.webp';
 import Artist from '../app/img/artists.png';
-
 import Location from '../app/img/location.png';
-
 import Booking from '../app/img/booking.png';
-
 import Quotes from '../app/img/quotes.png';
 import Quotesright from '../app/img/Quotesright.png';
 import Carousel from "react-bootstrap/Carousel";
@@ -37,18 +34,17 @@ import { FaQuoteRight } from "react-icons/fa6";
 import { FaQuoteLeft } from "react-icons/fa6";
 import Slider from 'react-slick';
 import Testimonial from 'react-slick';
-
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export default function Home() {
 
+export default function Home() {
   var settings = {
     dots: false,
     infinite: true,
     nav: true,
     autoplay: true,
-    speed: 500,   responsive: [
+    speed: 500, responsive: [
       {
         breakpoint: 1920,
         settings: {
@@ -85,8 +81,8 @@ export default function Home() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    prevArrow : <BsCaretLeftFill />,
-    nextArrow : <BsCaretRightFill />,
+    prevArrow: <BsCaretLeftFill />,
+    nextArrow: <BsCaretRightFill />,
     responsive: [
       {
         breakpoint: 1920,
@@ -370,46 +366,46 @@ export default function Home() {
           <div className="row" >
             <div className="col-lg-12 col-xl-12 col-md-12 col-12" >
               <h2 className='pb-lg-3 pb-md-3 pb-2' >
-              ATTRIBUTES THAT DEFINE US -
+                ATTRIBUTES THAT DEFINE US -
               </h2>
-            <Accordion>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>The most exhaustive list to hire an artist</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Streamlined and hassle-free artist booking</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="2">
-        <Accordion.Header>Most competitive prices guaranteed</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
+              <Accordion>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>The most exhaustive list to hire an artist</Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>Streamlined and hassle-free artist booking</Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header>Most competitive prices guaranteed</Accordion.Header>
+                  <Accordion.Body>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
             </div>
           </div>
         </div>
@@ -421,66 +417,66 @@ export default function Home() {
           <div className="row" >
             <div className="col-xl-12 col-lg-12 col-md-12 colc-12" >
               <h2 className='test-title text-center pb-lg-5 pb-md-4 pb-3' >
-              They Loved Us... You'll too!
+                They Loved Us... You'll too!
               </h2>
-            <Testimonial  {...testimonials} >
-          <div>
-            <Link href="javascript:void(0)" className="text-decoration-none" >
-              <div className="tes-div position-relative" >
-              <Image src={Quotes} className='quotes-img' alt={Quotes} />
-                <div className='tes-str-div' >
-                <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+              <Testimonial  {...testimonials} >
+                <div>
+                  <Link href="javascript:void(0)" className="text-decoration-none" >
+                    <div className="tes-div position-relative" >
+                      <Image src={Quotes} className='quotes-img' alt={Quotes} />
+                      <div className='tes-str-div' >
+                        <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+                      </div>
+                      <p>Id eu justo eget sed lobortis aliquet faucibus. Condimentum metus purus diam in tempor. Ultrices nisi, sed nulla ornare.</p>
+                      <h6>YASH PATHAK</h6>
+                      <span>Regional Head HR (Max Life Insurance)</span>
+                      <Image src={Quotesright} className='quotes-btm-img' alt={Quotesright} />
+                    </div>
+                  </Link>
                 </div>
-<p>Id eu justo eget sed lobortis aliquet faucibus. Condimentum metus purus diam in tempor. Ultrices nisi, sed nulla ornare.</p>
-<h6>YASH PATHAK</h6>
-<span>Regional Head HR (Max Life Insurance)</span>
-<Image src={Quotesright} className='quotes-btm-img' alt={Quotesright} />
-              </div>              
-            </Link>
-          </div>
-          <div>
-            <Link href="javascript:void(0)" className="text-decoration-none" >
-              <div className="tes-div position-relative" >
-              <Image src={Quotes} className='quotes-img' alt={Quotes} />
-                <div className='tes-str-div' >
-                <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+                <div>
+                  <Link href="javascript:void(0)" className="text-decoration-none" >
+                    <div className="tes-div position-relative" >
+                      <Image src={Quotes} className='quotes-img' alt={Quotes} />
+                      <div className='tes-str-div' >
+                        <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+                      </div>
+                      <p>Id eu justo eget sed lobortis aliquet faucibus. Condimentum metus purus diam in tempor. Ultrices nisi, sed nulla ornare.</p>
+                      <h6>YASH PATHAK</h6>
+                      <span>Regional Head HR (Max Life Insurance)</span>
+                      <Image src={Quotesright} className='quotes-btm-img' alt={Quotesright} />
+                    </div>
+                  </Link>
                 </div>
-<p>Id eu justo eget sed lobortis aliquet faucibus. Condimentum metus purus diam in tempor. Ultrices nisi, sed nulla ornare.</p>
-<h6>YASH PATHAK</h6>
-<span>Regional Head HR (Max Life Insurance)</span>
-<Image src={Quotesright} className='quotes-btm-img' alt={Quotesright} />
-              </div>              
-            </Link>
-          </div>
-          <div>
-            <Link href="javascript:void(0)" className="text-decoration-none" >
-              <div className="tes-div position-relative" >
-              <Image src={Quotes} className='quotes-img' alt={Quotes} />
-                <div className='tes-str-div' >
-                <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+                <div>
+                  <Link href="javascript:void(0)" className="text-decoration-none" >
+                    <div className="tes-div position-relative" >
+                      <Image src={Quotes} className='quotes-img' alt={Quotes} />
+                      <div className='tes-str-div' >
+                        <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+                      </div>
+                      <p>Id eu justo eget sed lobortis aliquet faucibus. Condimentum metus purus diam in tempor. Ultrices nisi, sed nulla ornare.</p>
+                      <h6>YASH PATHAK</h6>
+                      <span>Regional Head HR (Max Life Insurance)</span>
+                      <Image src={Quotesright} className='quotes-btm-img' alt={Quotesright} />
+                    </div>
+                  </Link>
                 </div>
-<p>Id eu justo eget sed lobortis aliquet faucibus. Condimentum metus purus diam in tempor. Ultrices nisi, sed nulla ornare.</p>
-<h6>YASH PATHAK</h6>
-<span>Regional Head HR (Max Life Insurance)</span>
-<Image src={Quotesright} className='quotes-btm-img' alt={Quotesright} />
-              </div>              
-            </Link>
-          </div>
-          <div>
-            <Link href="javascript:void(0)" className="text-decoration-none" >
-              <div className="tes-div position-relative" >
-              <Image src={Quotes} className='quotes-img' alt={Quotes} />
-                <div className='tes-str-div' >
-                <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+                <div>
+                  <Link href="javascript:void(0)" className="text-decoration-none" >
+                    <div className="tes-div position-relative" >
+                      <Image src={Quotes} className='quotes-img' alt={Quotes} />
+                      <div className='tes-str-div' >
+                        <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+                      </div>
+                      <p>Id eu justo eget sed lobortis aliquet faucibus. Condimentum metus purus diam in tempor. Ultrices nisi, sed nulla ornare.</p>
+                      <h6>YASH PATHAK</h6>
+                      <span>Regional Head HR (Max Life Insurance)</span>
+                      <Image src={Quotesright} className='quotes-btm-img' alt={Quotesright} />
+                    </div>
+                  </Link>
                 </div>
-<p>Id eu justo eget sed lobortis aliquet faucibus. Condimentum metus purus diam in tempor. Ultrices nisi, sed nulla ornare.</p>
-<h6>YASH PATHAK</h6>
-<span>Regional Head HR (Max Life Insurance)</span>
-<Image src={Quotesright} className='quotes-btm-img' alt={Quotesright} />
-              </div>              
-            </Link>
-          </div>
-        </Testimonial>
+              </Testimonial>
             </div>
           </div>
         </div>
