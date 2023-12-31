@@ -312,7 +312,7 @@ export default function Home() {
       <section className="why-us-div position-relative" >
         <div className="container" >
           <div className="row" >
-            <div className="col-xl-7 col-lg-6 col-md-12 col-12" >
+            <div className="col-xl-7 col-lg-7 col-md-8 col-sm-12 col-12" >
               <div className="title  pb-lg-4 pb-md-3 pb-2" >
                 <h2 className='text-start' >Why us?</h2>
                 <p>To Hire the best artist for events and shows</p>
@@ -355,7 +355,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-5 col-lg-6 col-md-12 col-12" >
+            <div className="col-xl-5 col-lg-5 col-md-4 col-sm-12 col-12" >
               <div className="why-img" >
                 <Image src={About} className="img-fluid w-100" alt={About} />
               </div>
