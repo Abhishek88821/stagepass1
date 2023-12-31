@@ -28,7 +28,7 @@ html {
 .hea-div {
     position: absolute;
     width: 100%;
-    z-index: 1;
+    z-index: 99;
     top: 35px
 }
 
@@ -1729,9 +1729,9 @@ input.btn.btn-sbt,
     }
 
     .art-div-img {
-        height: 70px;
-        width: 70px;
-        border-radius: 40px;
+        height: 80px;
+        width: 80px;
+        border-radius: 35px;
     }
 
     .art-box {
